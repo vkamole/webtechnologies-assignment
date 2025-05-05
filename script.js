@@ -71,10 +71,49 @@ function createFloatingSidebar() {
 
 // Initialize floating sidebar when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
-  // Your existing code...
-
   // Add this line to initialize the sidebar
   createFloatingSidebar();
 
   // Your existing code...
+});
+// Number Counter Animation
+function animateCounters() {
+  const counters = document.querySelectorAll(".stat-number");
+  const speed = 200; // The lower the faster
+
+  counters.forEach((counter) => {
+    const target = +counter.getAttribute("data-count");
+    const count = +counter.innerText;
+    const increment = target / speed;
+
+    if (count < target) {
+      counter.innerText = Math.ceil(count + increment);
+      setTimeout(animateCounters, 1);
+    } else {
+      counter.innerText = target;
+    }
+  });
+}
+
+// Initialize when the element is in viewport
+function initCounterWhenVisible() {
+  const statsSection = document.querySelector(".stats");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  ); // Trigger when 50% visible
+
+  observer.observe(statsSection);
+}
+
+// Call this in your DOMContentLoaded event
+document.addEventListener("DOMContentLoaded", function () {
+  initCounterWhenVisible();
 });
