@@ -11,6 +11,50 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Floating Sidebar -->
+    <div class="floating-sidebar">
+      <!-- Back Button -->
+      <button class="sidebar-button back-btn" onclick="window.history.back()">
+        <i class="fas fa-arrow-left"></i>
+        <span class="sidebar-tooltip">Back</span>
+      </button>
+
+      <!-- Download Button -->
+      <button class="sidebar-button download-btn" onclick="downloadPortfolio()">
+        <i class="fas fa-download"></i>
+        <span class="sidebar-tooltip">Download CV</span>
+      </button>
+
+      <!-- Buy/Cart Button -->
+      <button class="sidebar-button cart-btn" onclick="openCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="sidebar-tooltip">Buy Services</span>
+      </button>
+
+      <!-- Social Media Buttons -->
+      <button class="sidebar-button" onclick="window.open('#', '_blank')">
+        <i class="fab fa-facebook-f"></i>
+        <span class="sidebar-tooltip">Facebook</span>
+      </button>
+      <button class="sidebar-button" onclick="window.open('#', '_blank')">
+        <i class="fab fa-twitter"></i>
+        <span class="sidebar-tooltip">Twitter</span>
+      </button>
+      <button class="sidebar-button" onclick="window.open('#', '_blank')">
+        <i class="fab fa-instagram"></i>
+        <span class="sidebar-tooltip">Instagram</span>
+      </button>
+
+      <!-- Contact Button -->
+      <button
+        class="sidebar-button contact-btn"
+        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+      >
+        <i class="fas fa-envelope"></i>
+        <span class="sidebar-tooltip">Contact Me</span>
+      </button>
+    </div>
+
     <header class="header">
       <div class="container">
         <nav class="navbar">
@@ -250,34 +294,6 @@
         </div>
         <div class="portfolio-grid">
           <!-- Portfolio items will be added dynamically with JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <section class="mood-section">
-      <div class="container">
-        <div class="mood-content">
-          <div class="mood-text">
-            <p>
-              Symphony the smallest dog<br />is the right element with the<br />clasp
-              on bigger edge of<br />your life.
-            </p>
-            <ul class="mood-list">
-              <li>never forget</li>
-              <li>yourself</li>
-            </ul>
-            <div class="divider">* * *</div>
-            <h2>YOU ARE<br /><span>worth IT</span></h2>
-          </div>
-          <div class="mood-selector">
-            <h3>MOOD<br /><span>teacher</span></h3>
-            <div class="mood-options">
-              <div class="mood-option">HAPPY</div>
-              <div class="mood-option">CALM</div>
-              <div class="mood-option">SAD</div>
-              <div class="mood-option">STRESSED</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
