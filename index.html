@@ -3,275 +3,364 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>John Watson - Web Designer & Developer</title>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-one">
-      <h2 class="heading-one">UI Portfolio</h2>
+    <!-- Floating Sidebar -->
+    <div class="floating-sidebar">
+      <!-- Back Button -->
+      <button class="sidebar-button back-btn" onclick="window.history.back()">
+        <i class="fas fa-arrow-left"></i>
+        <span class="sidebar-tooltip">Back</span>
+      </button>
 
-      <nav class="navigation-one">
-        <ul class="list-one">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="pages.html">Pages</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <button class="button-one">Hire Me</button>
-          <span class="material-symbols-outlined"> search </span>
-          <span class="material-symbols-outlined"> bedtime </span>
-        </ul>
-      </nav>
+      <!-- Download Button -->
+      <button class="sidebar-button download-btn" onclick="downloadPortfolio()">
+        <i class="fas fa-download"></i>
+        <span class="sidebar-tooltip">Download CV</span>
+      </button>
 
-      <div class="container-one">
-        <h2 class="heading-two">Hi, I'm John Watson</h2>
+      <!-- Buy/Cart Button -->
+      <button class="sidebar-button cart-btn" onclick="openCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="sidebar-tooltip">Buy Services</span>
+      </button>
 
-        <h1 class="heading-three">Web De</h1>
+      <!-- Social Media Buttons -->
+      <button class="sidebar-button" onclick="window.open('#', '_blank')">
+        <i class="fab fa-facebook-f"></i>
+        <span class="sidebar-tooltip">Facebook</span>
+      </button>
+      <button class="sidebar-button" onclick="window.open('#', '_blank')">
+        <i class="fab fa-twitter"></i>
+        <span class="sidebar-tooltip">Twitter</span>
+      </button>
+      <button class="sidebar-button" onclick="window.open('#', '_blank')">
+        <i class="fab fa-instagram"></i>
+        <span class="sidebar-tooltip">Instagram</span>
+      </button>
 
-        <p>
-          I love Graphic Design and Photography and have been working on my
-          portfolio <br />
-          since 2016. I can give your business a new Creative start right away!
-        </p>
-
-        <button class="button-two">Hire Me</button>
-
-        <button class="button-three">My Portfolio</button>
-      </div>
-    </div>
-
-    <div class="container-two">
-      <h3 class="heading-four"><small>MY BIOGRAPHY </small></h3>
-
-      <h2 class="heading-five">
-        A Lead UI Designer & Web Developer <br />
-        Based in UK
-      </h2>
-
-      <p class="paragraph-two">
-        I love Graphic Design and Photography and have been working on my <br />
-        portfolio since 2016. I can give your business a new Creative start
-        right
-        <br />
-        away! Contact me and we will discuss your projects!
-      </p>
-
-      <ul class="list-two">
-        <li><strong>Name</strong>: John Watson</li>
-        <li><strong>Email</strong>: example@gmail.com</li>
-        <li><strong>From</strong>: London, UK.</li>
-        <li><strong>Phone</strong>: +21 234 567 8901</li>
-      </ul>
-
-      <p class="paragraph-three">
-        <strong>Follow me on</strong>
-      </p>
-
-      <button class="button-four">Hire Me</button>
-      <button class="button-five">Download CV</button>
-    </div>
-
-    <div class="container-three">
-      <h2 class="heading-six">What I Do For You</h2>
-
-      <div class="content">
-        <div class="content-one">
-          <span class="material-symbols-outlined" id="symbols">
-            laptop_chromebook
-          </span>
-          <h3>Web Development</h3>
-          <p>
-            Sed ut perspiciatis unde omnis iste <br />
-            natus error sit accus antium dolor <br />
-            emque laudan.
-          </p>
-        </div>
-
-        <div class="content-one">
-          <h3>App development</h3>
-          <p>
-            Sed ut perspiciatis unde omnis iste <br />
-            natus error sit accus antium dolor <br />
-            emque laudan.
-          </p>
-        </div>
-
-        <div class="content-one">
-          <span class="material-symbols-outlined" id="symbols">
-            photo_camera
-          </span>
-          <h3>Photography</h3>
-          <p>
-            Sed ut perspiciatis unde omnis iste <br />
-            natus error sit accus antium dolor <br />
-            emque laudan.
-          </p>
-        </div>
-      </div>
-
-      <a href="" class="link-one"
-        ><strong class="link-one"
-          >More Services
-          <span class="material-symbols-outlined"> arrow_right_alt </span>
-        </strong></a
+      <!-- Contact Button -->
+      <button
+        class="sidebar-button contact-btn"
+        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
       >
+        <i class="fas fa-envelope"></i>
+        <span class="sidebar-tooltip">Contact Me</span>
+      </button>
     </div>
 
-    <div class="container-four">
-      <h3 class="heading-four">MY SKILLS</h3>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">John Watson</div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-      <h3 class="heading-seven">My Featured Skills</h3>
-
-      <img src="" alt="" />
-
-      <p class="paragraph-two">
-        I specialize in Branding and Strategy, and I'm passionate about <br />
-        creating Awesome Portfolio work. And I'm always ready to impress the
-        <br />
-        audience with my Creativity.
-      </p>
-
-      <ul>
-        <li class="content-two">UI/UX Design</li>
-        <li class="content-two">Ideas & Technology</li>
-        <li class="content-two">Branding Design</li>
-        <li class="content-two">Responsive Web Design</li>
-      </ul>
-    </div>
-
-    <div class="color-box">
-      <div class="container-five">
-        <div class="content-one">
-          <h3>Web Development</h3>
-          <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-        </div>
-
-        <div class="content-one">
-          <h3>Design Trends</h3>
-          <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-        </div>
-
-        <div class="content-one">
-          <h3>Research & Analysis</h3>
-          <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-        </div>
-
-        <div class="content-one">
-          <h3>Customer Support</h3>
-          <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-        </div>
-
-        <div class="content-one">
-          <h3>Responsive Design</h3>
-          <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-        </div>
-
-        <div class="content-one">
-          <h3>PSD Design</h3>
-          <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hi, I'm <span>John Watson</span></h1>
+            <h2>Web Designer & Developer</h2>
+            <p>
+              I love Graphic design and Photography and have been working on my
+              portfolio since 2016. I can give your business a new Creative
+              start right away!
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Hire Me</a>
+              <a href="#" class="btn btn-secondary">My Portfolio</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-placeholder"></div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container-six">
-      <div class="content-one">
-        <h1>135</h1>
-        <p>Finished Projects</p>
+    <section class="bio">
+      <div class="container">
+        <div class="section-header">
+          <h2>MY BIOGRAPHY</h2>
+          <h3>A Lead UI Designer & Web Developer Based In UK</h3>
+        </div>
+        <div class="bio-content">
+          <div class="bio-text">
+            <p>
+              I love Graphic design and Photography and have been working on my
+              portfolio since 2016. I Can give your business a new Creative
+              start right away! Contact me and we will discuss your projects!
+            </p>
+            <div class="bio-info">
+              <div class="info-item">
+                <span class="info-label">Name:</span>
+                <span class="info-value">John Watson</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Email:</span>
+                <span class="info-value">example@mail.com</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">From:</span>
+                <span class="info-value">London, UK</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Phone:</span>
+                <span class="info-value">+21 234 567 8901</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <span>Follow me on</span>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <span class="emoji">💤❤️</span>
+            </div>
+            <div class="bio-buttons">
+              <a href="#contact" class="btn btn-primary">Hire me</a>
+              <a href="#" class="btn btn-secondary">Download CV</a>
+            </div>
+          </div>
+          <div class="bio-image">
+            <div class="image-placeholder"></div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="content-one">
-        <h1>225</h1>
-        <p>Working Hours</p>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>What I Do For You</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit accusa nitum
+              dolor emque laudan.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>App development</h3>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit accusa nitum
+              dolor emque laudan.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <h3>Photography</h3>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit accusa nitum
+              dolor emque laudan.
+            </p>
+          </div>
+        </div>
+        <div class="more-services">
+          <a href="#" class="btn btn-link"
+            >More Services <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
       </div>
+    </section>
 
-      <div class="content-one">
-        <h1>115</h1>
-        <p>Online Support</p>
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2>MY SKILLS</h2>
+          <h3>My Featured Skills</h3>
+        </div>
+        <div class="skills-content">
+          <div class="skills-text">
+            <p>
+              I specialize in Branding and Strategy, and am passionate about
+              creating Awesome Portfolio work. And I always ready to impress the
+              audience with my Creativity.
+            </p>
+            <div class="skills-list">
+              <div class="skill-item">U/LUX Design</div>
+              <div class="skill-item">Ideas & Technology</div>
+              <div class="skill-item">Branding Design</div>
+              <div class="skill-item">Responsive Web Design</div>
+            </div>
+          </div>
+          <div class="skills-image">
+            <div class="image-placeholder"></div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="content-one">
-        <h1>272</h1>
-        <p>Happy Clients</p>
+    <section class="additional-services">
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-item">
+            <h3>Web Development</h3>
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Design Trends</h3>
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Research & Analysis</h3>
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Customer support</h3>
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Responsive design</h3>
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>PSD Design</h3>
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container-seven">
-      <h2 class="heading-seven">My Success Work</h2>
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
-    </div>
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-count="135">0</div>
+            <div class="stat-label">Finished Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="225">0</div>
+            <div class="stat-label">Working Hours</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="115">0</div>
+            <div class="stat-label">Online Support</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="272">0</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="container-eight">
-      <h1>LOGOS...</h1>
-    </div>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2>My Success Work</h2>
+        </div>
+        <div class="portfolio-grid">
+          <!-- Portfolio items will be added dynamically with JavaScript -->
+        </div>
+      </div>
+    </section>
 
-    <div class="container-nine">
-      <h3>UI Portfolio</h3>
-      <ul class="list-three">
-        <li>
-          <span class="material-symbols-outlined" id="contact">
-            phone_enabled </span
-          >+12 345 678 900
-        </li>
-        <li>
-          <span class="material-symbols-outlined" id="contact"> mail </span
-          >info@example.com
-        </li>
-        <li>
-          <span class="material-symbols-outlined" id="contact">
-            location_on </span
-          >208 Avenue street, UK - 62517.
-        </li>
-      </ul>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Me</h2>
+          <h3>Let's discuss your project</h3>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
 
-      <footer>
-        <p>© 2022 UI Portfolio. All rights reserved.</p>
-        <ul class="list-four">
-          <li><a href="index.html">facebook logo</a></li>
-          <li><a href="about.html">twitter logo</a></li>
-          <li><a href="services.html">google logo</a></li>
-          <li><a href="blog.html">github logo</a></li>
-          <li><a href="pages.html">Not visible logo</a></li>
-        </ul>
-      </footer>
-    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h3>John Watson</h3>
+            <p>
+              Web Designer & Developer based in London, UK. Creating beautiful
+              and functional digital experiences.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact Info</h3>
+            <p>London, UK</p>
+            <p>example@mail.com</p>
+            <p>+21 234 567 8901</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 John Watson. All Rights Reserved.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
